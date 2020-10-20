@@ -1,0 +1,59 @@
+##git 提交修改的文件到github上操作过程
+吴锦航@DESKTOP-ST4N3LA MINGW64 ~/Desktop/toutiao-m (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   src/App.vue
+        deleted:    src/assets/logo.png
+        deleted:    src/components/HelloWorld.vue
+        modified:   src/main.js
+        modified:   src/router/index.js
+        deleted:    src/views/About.vue
+        deleted:    src/views/Home.vue
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .prettierrc
+        src/styles/
+        vue.config.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+吴锦航@DESKTOP-ST4N3LA MINGW64 ~/Desktop/toutiao-m (master)
+$ git add .
+warning: LF will be replaced by CRLF in src/App.vue.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/router/index.js.
+The file will have its original line endings in your working directory
+
+吴锦航@DESKTOP-ST4N3LA MINGW64 ~/Desktop/toutiao-m (master)
+$ git commit -m "项目初始化-调整初始化目录结构"
+ > running pre-commit hook: lint-staged
+Stashing changes... [started]
+Stashing changes... [skipped]
+→ No partially staged files found...
+Running tasks... [started]
+Running tasks for *.{js,jsx,vue} [started]
+vue-cli-service lint [started]
+vue-cli-service lint [completed]
+git add [started]
+git add [completed]
+Running tasks for *.{js,jsx,vue} [completed]
+Running tasks... [completed]
+[master bd5cdd3] 项目初始化-调整初始化目录结构
+ 10 files changed, 51 insertions(+), 142 deletions(-)
+ create mode 100644 .prettierrc
+ rewrite src/App.vue (85%)
+ delete mode 100644 src/assets/logo.png
+ delete mode 100644 src/components/HelloWorld.vue
+ rewrite src/router/index.js (70%)
+ create mode 100644 src/styles/index.less
+ delete mode 100644 src/views/About.vue
+ delete mode 100644 src/views/Home.vue
+ create mode 100644 vue.config.js
