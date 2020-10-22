@@ -15,6 +15,11 @@ import Vant from 'vant'
 // 自动设置REM基准值（html标签字体大小）
 import 'amfe-flexible'
 
+// 加载dayjs全局过滤器的使用
+import './utils/dayjs'
+
+// import './api/test'
+
 // 全局注册 vant中的组件
 Vue.use(Vant)
 

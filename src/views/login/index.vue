@@ -41,7 +41,14 @@
             format="ss s"
             @finish="isCountDownShow = false"
           />
-          <van-button :loading="isSendSmsLoading" v-else size="small" class="send-btn" round @click.prevent="onSendCms">获取验证码</van-button>
+          <van-button
+            :loading="isSendSmsLoading"
+            v-else
+            size="small"
+            class="send-btn"
+            round
+            @click.prevent="onSendCms"
+          >获取验证码</van-button>
         </template>
       </van-field>
       <!--   登录按钮   -->
@@ -174,7 +181,7 @@ export default {
 <style lang="less" scoped>
   .login-container {
     .send-btn {
-      width: 76px;
+      width: 80px;
       height: 23px;
       font-size: 11px;
       color: #666;
